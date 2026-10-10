@@ -1,10 +1,7 @@
 package com.fernando_grespam.usuario.infrastructure.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
@@ -12,6 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "enderecos")
+@Builder
 
 public class Endereco {
 
@@ -30,6 +28,9 @@ public class Endereco {
 
     @Column(name = "complemento", length = 100)
     private String complemento;
+
+    @Column(name = "cidade", length = 50)
+    private String cidade;
 
     @Column(name = "estado", length = 2)
     private String estado;
