@@ -1,6 +1,7 @@
 package com.fernando_grespam.usuario.infrastructure.repository;
 
-import com.fernando.aprendendo_spring.infrastructure.entity.Endereco;
+
+import com.fernando_grespam.usuario.infrastructure.entity.Endereco;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
